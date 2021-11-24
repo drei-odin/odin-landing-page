@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,300;0,400;0,900;1,300&display=swap");
 
-/* Photo by <a href="https://unsplash.com/@picoftasty?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mae Mu</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-   */
-##f5f6fa #2f3640 #353535 #ea4c89 #4cd2ea
-
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -17,6 +13,7 @@ html {
 
 body {
   background-color: #f5f6fa;
+  color: #353535;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,6 +24,7 @@ body {
   padding: 0;
 }
 
+blockquote,
 h1,
 h2,
 h3,
@@ -34,6 +32,40 @@ p,
 ul {
   margin: 0;
   padding: 0;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 300;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ea4c89;
+  font-weight: 400;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  width: 120px;
+}
+
+a,
+button {
+  cursor: pointer;
+  transition: all 0.08s ease;
 }
 
 .container {
@@ -53,39 +85,6 @@ nav {
   align-items: center;
   height: 50px;
   margin: 15px 0;
-  outline: 0.5px solid red;
-}
-
-ul {
-  display: flex;
-  gap: 20px;
-  font-family: "Lato";
-  font-size: 16px;
-  font-weight: 300;
-  list-style-type: none;
-  text-transform: uppercase;
-}
-
-a {
-  color: inherit;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.08s ease-out;
-}
-
-a:hover {
-  color: #fff;
-  font-weight: 400;
-}
-
-button {
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 8px 10px;
-  text-transform: uppercase;
-  transition: all 0.08s ease;
-  width: 120px;
 }
 
 .logo {
@@ -94,12 +93,17 @@ button {
   font-size: 2.8em;
 }
 
-#hero {
+#hero,
+#about,
+#quote,
+#cta {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+#hero {
+  justify-content: space-between;
   gap: 2em;
-  outline: 0.5px solid red
 }
 
 .hero-info {
@@ -130,4 +134,92 @@ button {
   flex: 1 1 auto;
   height: auto;
   width: 45%;
+}
+
+#about {
+  background-color: #f5f6fa;
+  justify-content: center;
+  height: 90vh;
+  text-align: center;
+}
+
+h2 {
+  color: #ea4c89;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  max-width: 200px;
+}
+
+.product-img {
+  border-radius: 10px;
+  height: auto;
+  margin-bottom: 10px;
+  transition: all 0.08s ease;
+  width: 200px;
+}
+
+#quote,
+#cta {
+  justify-content: center;
+  height: 350px;
+}
+
+#quote {
+  background-color: #4cd2ea;
+}
+
+#quote p {
+  font-style: italic;
+  font-weight: 300;
+}
+
+figcaption {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 15px;
+  text-align: right;
+}
+
+#cta {
+  background-color: #f5f6fa;
+}
+
+.cta-container {
+  background-color: #ea4c89;
+  color: #f5f6fa;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  width: 980px;
+}
+
+.cta-container button {
+  border: 1px solid #f5f6fa;
+  background-color: #ea4c89;
+  color: #f5f6fa;
+}
+
+.cta-container button:hover {
+  border: 1px solid #4cd2ea;
+  color: #4cd2ea;
+}
+
+footer {
+  background-color: #353535;
+  color: #f5f6fa;
+  padding: 1em;
+  text-align: center;
 }
