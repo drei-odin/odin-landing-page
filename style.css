@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,300;0,400;0,900;1,300&display=swap");
+
+/* Photo by <a href="https://unsplash.com/@picoftasty?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mae Mu</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   */
+##f5f6fa #2f3640 #353535 #ea4c89 html {
+  box-sizing: border-box;
+  font-family: "Lato", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #f5f6fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 980px;
+}
+
+header {
+  background-color: #353535;
+  color: #f5f6fa;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin: 15px 0;
+  outline: 0.5px solid red;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 300;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.08s ease-out;
+}
+
+a:hover {
+  color: #fff;
+  font-weight: 400;
+}
+
+.logo {
+  color: #ea4c89;
+  font-family: "Abril Fatface";
+  font-size: 2.8em;
+}
