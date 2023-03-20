@@ -59,7 +59,7 @@ ul {
 }
 
 li {
-  list-style: none; 
+  list-style: none;
   padding: 0 30px;
 }
 
@@ -116,7 +116,6 @@ main {
   min-width: 250px;
 }
 
-
 /* sections */
 section {
   padding: 30px;
@@ -136,7 +135,7 @@ h2 {
 
 /* info section */
 
-#about{
+#about {
   display: flex;
   justify-content: center;
 }
@@ -178,7 +177,7 @@ h2 {
 }
 
 .info-text {
-  color: #4b5363;
+  color: #1f2937;
 }
 
 .brew {
@@ -188,4 +187,19 @@ h2 {
 /* testimonial section */
 #testimonial {
   background-color: #e5e7eb;
+}
+
+blockquote {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 100;
+  color: #1f2937;
+}
+
+.cite {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  padding-top: 15px;
+  text-align: right;
 }
