@@ -36,10 +36,16 @@ footer {
 
 .btn {
   background-color: #3882f6;
-  border: none;
+  border: 1px solid #3882f6;
   border-radius: 5px;
   padding: 8px 25px;
   color: #f9faf8;
+}
+
+.btn:hover {
+  background-color: #1f2937;
+  border: 1px solid #3882f6;
+  color: #3882f6;
 }
 
 /* hero */
@@ -73,17 +79,22 @@ li:last-of-type {
   padding-right: 0;
 }
 
-a {
+.link {
   color: #e5e7eb;
   display: inline-block;
   font-size: 18px;
   text-decoration: none;
 }
 
+.link:hover {
+  color: #3882f6;
+}
+
 #logo {
   color: #f9faf8;
   font-size: 24px;
   font-weight: 800;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -226,6 +237,12 @@ blockquote {
 
 .btn-outline {
   border: 1px solid #f9faf8;
+}
+
+.btn-outline:hover {
+  background-color: #3882f6;
+  color: #1f2937;
+  border: 1px solid #1f2937;
 }
 
 /* footer */
